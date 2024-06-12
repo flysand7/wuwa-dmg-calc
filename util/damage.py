@@ -30,10 +30,11 @@ def simple_damage(character: Character, weapon: Weapon, move_id: str) -> tuple[f
     flat_bonus = 0.00
     base_dmg = base_ability_dmg + flat_dmg + flat_bonus
     # Calculate the resistances
-    enemy_level = 70 # TODO(flysand): Enemy needs to come from parameters
+    enemy_level = 65 # TODO(flysand): Enemy needs to come from parameters
     # Note(flysand): I ran around the world fighting a few enemies, this
     # seems to be the same for all enemies.
     enemy_base_res = 0.29
+    # enemy_base_res = 0.44 # Crownless in his weak phase
     res_penetration = 0.0
     res_total = enemy_base_res + res_penetration
     em_res = \
